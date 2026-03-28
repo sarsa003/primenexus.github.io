@@ -1,0 +1,144 @@
+{
+    "en": {
+        "meta": {
+            "title": "Prime Nexus — IT Consulting & Technology Strategy",
+            "description": "Prime Nexus is an IT consulting firm helping organizations deliver secure, scalable, and user-centric technology. Cloud, data, cybersecurity, and digital transformation—done right.",
+            "ogTitle": "Prime Nexus — IT Consulting",
+            "ogDescription": "Secure, scalable, and user-centric technology consulting. Cloud • Data • Cybersecurity • Modernization."
+        },
+        "brand": "Prime Nexus",
+        "nav": {
+            "services": "Services",
+            "industries": "Industries",
+            "approach": "Approach",
+            "about": "About",
+            "contact": "Contact"
+        },
+        "hero": {
+            "badge": "Trusted IT Consulting • Cloud • Data • Cybersecurity",
+            "title": "Build secure, scalable systems that move your business forward.",
+            "desc": "Prime Nexus partners with teams to design, modernize, and operate technology that actually serves the business. From cloud architecture and data platforms to security hardening and delivery coaching—our consultants ship results, not buzzwords.",
+            "ctaPrimary": "Book a consultation",
+            "ctaSecondary": "Explore services",
+            "whatWeDo": "What we do"
+        },
+        "cards": {
+            "cloud": {
+                "title": "Cloud & Platform",
+                "text": "Landing zones, Kubernetes, DevOps, cost optimization, and SRE to keep systems reliable and affordable."
+            },
+            "data": {
+                "title": "Data & Analytics",
+                "text": "Warehouses, ELT/ETL, real-time pipelines, governance, and dashboards that drive decisions."
+            },
+            "security": {
+                "title": "Cybersecurity",
+                "text": "Zero-trust architectures, IAM, threat modeling, compliance readiness, and security reviews."
+            },
+            "delivery": {
+                "title": "Delivery & Modernization",
+                "text": "Legacy re-platforming, API design, agile coaching, and product enablement for faster outcomes."
+            }
+        },
+        "kpis": {
+            "title": "Compliance & Risk Impact",
+            "detected": "Cybersecurity threats detected / month",
+            "penalty": "Potential penalty exposure without compliance",
+            "lost": "Estimated lost revenue from GDPR, HIPAA, PCI DSS, ISO 27001, SOX gaps"
+        },
+        "services": {
+            "title": "Services",
+            "sub": "Engagements sized to your goals—from short assessments to full delivery squads.",
+            "arch": {
+                "title": "Architecture & Roadmaps",
+                "text": "Hands-on discovery and technical strategy tied to business outcomes, plus a pragmatic plan to execute."
+            },
+            "devops": {
+                "title": "DevOps & Automation",
+                "text": "CI/CD, infrastructure as code, observability, incident response, and performance tuning."
+            },
+            "security": {
+                "title": "Security & Compliance",
+                "text": "Security baselines, SOC 2 / ISO prep, cloud security posture management, and risk reduction."
+            },
+            "apps": {
+                "title": "Applications & APIs",
+                "text": "Microservices, integrations, and migrations—with maintainability and developer happiness baked in."
+            },
+            "bi": {
+                "title": "Analytics & BI",
+                "text": "Modern data stack selection, modeling, governance, and KPI dashboards aligned to teams."
+            },
+            "staff": {
+                "title": "Staff Augmentation",
+                "text": "Experienced engineers, analysts, and security specialists to accelerate delivery."
+            }
+        },
+        "industries": {
+            "title": "Industries",
+            "sub": "We meet you where you are—startup, scale-up, or enterprise.",
+            "fin": {
+                "title": "Fintech & Payments",
+                "text": "Low-latency systems, PCI alignment, fraud prevention, and auditability."
+            },
+            "health": {
+                "title": "Healthcare",
+                "text": "HIPAA-aware architectures, interoperability, and data privacy by design."
+            },
+            "retail": {
+                "title": "Retail & eCommerce",
+                "text": "Peak-season reliability, personalization, and analytics to boost LTV."
+            }
+        },
+        "approach": {
+            "title": "Our approach",
+            "sub": "Simple, transparent, outcome-driven.",
+            "step1": {
+                "title": "Discovery & Alignment.",
+                "text": "We connect the tech to the metrics that matter and map constraints early."
+            },
+            "step2": {
+                "title": "Design & Plan.",
+                "text": "Architecture, security baselines, and a delivery plan that minimizes risk."
+            },
+            "step3": {
+                "title": "Build & Enable.",
+                "text": "Pair with your team, automate relentlessly, and deliver in small, testable slices."
+            },
+            "step4": {
+                "title": "Run & Improve.",
+                "text": "Observability, SLOs, and cost visibility to keep systems healthy and budgets sane."
+            }
+        },
+        "about": {
+            "title": "About Prime Nexus",
+            "sub": "A senior team of architects, data engineers, and security specialists who enjoy solving messy problems.",
+            "why": {
+                "title": "Why us",
+                "text": "No black boxes. We work in the open, enable your team, and leave you stronger than we found you."
+            },
+            "how": {
+                "title": "How we engage",
+                "text": "Fixed-scope assessments, outcome-based projects, or embedded specialists—whichever drives results quickest."
+            }
+        },
+        "contact": {
+            "title": "Let’s talk",
+            "sub": "Tell us a bit about your goals and challenges. We’ll respond within one business day.",
+            "name": {
+                "label": "Name",
+                "placeholder": "Your name"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "you@company.com"
+            },
+            "company": {
+                "label": "Company",
+                "placeholder": "Company Inc."
+            },
+            "message": {
+                "label": "What can we help with?",
+                "placeholder": "Briefly describe your project or challenge"
+            },
+        }

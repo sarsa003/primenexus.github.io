@@ -1,346 +1,558 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Prime Nexus — IT Consulting & Technology Strategy</title>
-  <meta name="description" content="Prime Nexus is an IT consulting firm helping organizations deliver secure, scalable, and user-centric technology. Cloud, data, cybersecurity, and digital transformation—done right." />
-  <meta property="og:title" content="Prime Nexus — IT Consulting" />
-  <meta property="og:description" content="Secure, scalable, and user-centric technology consulting. Cloud • Data • Cybersecurity • Modernization." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/assets/og-image.png" />
-  <meta name="theme-color" content="#0b3d91" />
-  <link rel="icon" href="/assets/favicon.png" />
-  <style>
-    :root{
-      --bg:#0b1220;          /* deep ink */
-      --card:#0f1629;        /* slightly lighter */
-      --primary:#3b82f6;     /* blue */
-      --primary-600:#2563eb; /* darker blue */
-      --accent:#22d3ee;      /* cyan */
-      --text:#e6eaf2;        /* near white */
-      --muted:#a8b3cf;       /* muted text */
-      --ring: rgba(34,211,238,.35);
-      --shadow: 0 10px 25px rgba(0,0,0,.35);
-      --radius: 16px;
-      --max: 1160px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;background:radial-gradient(1200px 600px at 80% -20%, rgba(34,211,238,.15), transparent 60%), radial-gradient(800px 400px at 0% 10%, rgba(59,130,246,.15), transparent 60%), var(--bg); color:var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; scroll-behavior:smooth}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:var(--max); margin:0 auto; padding:0 20px}
-    .btn{display:inline-block; padding:12px 18px; border-radius:999px; font-weight:600; transition:.2s transform, .2s box-shadow, .2s background;
-      box-shadow:0 8px 20px rgba(59,130,246,.25)}
-    .btn.primary{background:linear-gradient(90deg,var(--primary),var(--accent)); color:#061224}
-    .btn.primary:hover{transform:translateY(-2px)}
-    .btn.ghost{border:1px solid rgba(168,179,207,.3); color:var(--text);}
-    .btn.ghost:hover{background:rgba(255,255,255,.04)}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    /* Header */
-    header{position:sticky; top:0; z-index:40; backdrop-filter:saturate(140%) blur(10px); background:rgba(11,18,32,.6); border-bottom:1px solid rgba(168,179,207,.1)}
-    .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
-    .logo{display:flex; gap:10px; align-items:center; font-weight:800; letter-spacing:.4px}
-    .logo-mark{width:28px; height:28px; border-radius:8px; background:conic-gradient(from 180deg, var(--primary), var(--accent)); box-shadow:0 0 0 4px rgba(34,211,238,.12)}
-    .nav a{color:var(--muted); font-weight:600}
-    .nav-links{display:flex; gap:22px; align-items:center}
-    .mobile-toggle{display:none; background:none; border:0; color:var(--text); font-size:22px}
-    @media (max-width:900px){
-      .nav-links{display:none}
-      .mobile-toggle{display:block}
-      .mobile-menu{display:none; padding:10px 0 18px; border-top:1px solid rgba(168,179,207,.1)}
-      .mobile-menu a{display:block; padding:10px 0; color:var(--text)}
-    }
+  <!-- SEO -->
+  <title>Prime Nexus — Consulting IT & Technologie · Yaoundé, Cameroun</title>
+  <meta name="description" content="Prime Nexus est un cabinet de conseil en technologie basé à Yaoundé, spécialisé en cloud, cybersécurité, data et développement pour les entreprises d'Afrique Centrale.">
+  <meta name="keywords" content="consulting IT Cameroun, cybersécurité Yaoundé, cloud Afrique Centrale, développement logiciel Cameroun, Prime Nexus">
+  <meta name="author" content="Prime Nexus SARL">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://primenexus.me/">
 
-    /* Hero */
-    .hero{padding:90px 0 60px}
-    .hero h1{font-size:44px; line-height:1.1; margin:0 0 16px}
-    .hero p{color:var(--muted); font-size:18px; max-width:760px}
-    .hero-cta{margin-top:22px; display:flex; gap:12px; flex-wrap:wrap}
-    .hero-card{margin-top:36px; display:grid; grid-template-columns:1.2fr .8fr; gap:20px}
-    .panel{background:linear-gradient(180deg, rgba(59,130,246,.12), rgba(59,130,246,0)); border:1px solid rgba(168,179,207,.15); padding:22px; border-radius:var(--radius); box-shadow:var(--shadow)}
-    .panel h3{margin:0 0 8px}
-    .kpis{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:10px}
-    .chip{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:999px; background:rgba(34,211,238,.08); border:1px solid rgba(34,211,238,.25); color:#d8f8ff; font-size:12px}
-    @media (max-width:900px){.hero-card{grid-template-columns:1fr}}
+  <!-- Open Graph (WhatsApp, LinkedIn, Facebook) -->
+  <meta property="og:title" content="Prime Nexus — Consulting IT · Yaoundé, Cameroun">
+  <meta property="og:description" content="Votre partenaire technologique en Afrique Centrale. Cloud, cybersécurité, data et développement aux standards internationaux.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://primenexus.me/">
+  <meta property="og:image" content="https://primenexus.me/assets/og-image.png">
+  <meta property="og:locale" content="fr_CM">
 
-    /* Trust bar */
-    .trust{display:grid; grid-template-columns:repeat(5,1fr); gap:22px; margin:40px 0 0; opacity:.85}
-    .logo-box{background:rgba(255,255,255,.04); border:1px dashed rgba(168,179,207,.2); border-radius:14px; height:64px; display:flex; align-items:center; justify-content:center; color:var(--muted); font-weight:700; letter-spacing:.08em}
-    @media (max-width:900px){.trust{grid-template-columns:repeat(2,1fr)}}
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prime Nexus — Consulting IT · Yaoundé">
+  <meta name="twitter:description" content="Cloud, cybersécurité, data et développement pour les entreprises d'Afrique Centrale.">
+  <meta name="twitter:image" content="https://primenexus.me/assets/og-image.png">
 
-    /* Sections */
-    section{padding:64px 0}
-    h2{font-size:30px; margin:0 0 8px}
-    .sub{color:var(--muted); margin:0 0 22px}
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
 
-    .grid{display:grid; gap:18px}
-    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
-    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
-    @media (max-width:900px){.grid.cols-3,.grid.cols-2{grid-template-columns:1fr}}
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    .card{background:var(--card); border:1px solid rgba(168,179,207,.12); padding:18px; border-radius:var(--radius); box-shadow:var(--shadow)}
-    .card h3{margin:6px 0 8px; font-size:18px}
-    .card p{color:var(--muted); margin:0}
-    .icon{width:28px; height:28px; border-radius:8px; display:inline-grid; place-items:center; background:linear-gradient(180deg, rgba(34,211,238,.22), rgba(34,211,238,0)); border:1px solid rgba(34,211,238,.3)}
-
-    .steps{display:grid; gap:12px}
-    .step{display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:flex-start}
-    .badge{width:28px; height:28px; border-radius:999px; display:grid; place-items:center; background:rgba(59,130,246,.2); border:1px solid rgba(59,130,246,.4); font-weight:700}
-
-    .testi{display:grid; gap:18px; grid-template-columns:repeat(3,1fr)}
-    .quote{padding:18px; border-left:3px solid var(--primary); background:linear-gradient(180deg, rgba(15,22,41,.7), rgba(15,22,41,.3)); border-radius:12px}
-    .quote p{margin:0}
-    .quote .who{color:var(--muted); margin-top:8px; font-size:14px}
-    @media (max-width:900px){.testi{grid-template-columns:1fr}}
-
-    /* Contact */
-    form{display:grid; gap:12px}
-    label{display:block; margin:6px 0 6px}
-    input, textarea{width:100%; padding:12px 14px; background:#0b1326; border:1px solid rgba(168,179,207,.18); border-radius:12px; color:var(--text)}
-    input:focus, textarea:focus{outline:none; box-shadow:0 0 0 4px var(--ring); border-color:var(--accent)}
-
-    /* Footer */
-    footer{padding:30px 0 50px; border-top:1px solid rgba(168,179,207,.1); color:var(--muted)}
-    .foot{display:grid; grid-template-columns:2fr 1fr 1fr; gap:18px}
-    .foot a{color:var(--muted)}
-    @media (max-width:900px){.foot{grid-template-columns:1fr}}
-  </style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header>
-    <div class="container nav">
-      <a href="#top" class="logo">
-        <span class="logo-mark" aria-hidden="true"></span>
-        <span>Prime Nexus</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#industries">Industries</a>
-        <a href="#approach">Approach</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="btn primary" style="padding:8px 14px">Contact</a>
-      </nav>
-      <button class="mobile-toggle" aria-label="Open navigation" onclick="toggleMenu()">☰</button>
+<body class="fr">
+
+  <!-- ── NAV ─────────────────────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <a href="#top" class="nav-logo">
+      <div class="nav-logo-mark">PN</div>
+      <div class="nav-logo-text">Prime <span>Nexus</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services"  data-fr="Services"  data-en="Services"></a></li>
+      <li><a href="#secteurs"  data-fr="Secteurs"  data-en="Industries"></a></li>
+      <li><a href="#approche"  data-fr="Approche"  data-en="Approach"></a></li>
+      <li><a href="#about"     data-fr="À propos"  data-en="About"></a></li>
+      <li><a href="#contact"   data-fr="Contact"   data-en="Contact"></a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="#contact" class="nav-cta" data-fr="Nous contacter" data-en="Get in touch"></a>
+      <button class="nav-hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <div class="container mobile-menu" id="mMenu">
-      <a href="#services" onclick="toggleMenu()">Services</a>
-      <a href="#industries" onclick="toggleMenu()">Industries</a>
-      <a href="#approach" onclick="toggleMenu()">Approach</a>
-      <a href="#about" onclick="toggleMenu()">About</a>
-      <a href="#contact" class="btn primary" style="margin-top:8px" onclick="toggleMenu()">Contact</a>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#services"  data-fr="Services"  data-en="Services"></a></li>
+      <li><a href="#secteurs"  data-fr="Secteurs"  data-en="Industries"></a></li>
+      <li><a href="#approche"  data-fr="Approche"  data-en="Approach"></a></li>
+      <li><a href="#about"     data-fr="À propos"  data-en="About"></a></li>
+      <li><a href="#contact"   data-fr="Contact"   data-en="Contact"></a></li>
+    </ul>
+  </div>
+
+  <!-- ── HERO ────────────────────────────────────────────────────────────── -->
+  <section class="hero" id="top">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-left reveal">
+      <p class="eyebrow" data-fr="Yaoundé, Cameroun" data-en="Yaoundé, Cameroon"></p>
+      <h1 class="hero-h1">
+        <span data-fr>Votre infrastructure<br>technologique,<br><em>aux standards mondiaux.</em></span>
+        <span data-en>Your technology<br>infrastructure,<br><em>built to global standards.</em></span>
+      </h1>
+      <p class="hero-sub">
+        <span data-fr>Prime Nexus accompagne les entreprises et institutions d'Afrique Centrale dans leur transformation numérique — cloud, cybersécurité, data et développement — avec la rigueur des standards internationaux.</span>
+        <span data-en>Prime Nexus partners with businesses and institutions across Central Africa to design, secure, and operate technology that meets international standards — cloud, cybersecurity, data, and software delivery.</span>
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary" data-fr="Discutons de votre projet" data-en="Discuss your project"></a>
+        <a href="#services" class="btn-outline" data-fr="Nos services" data-en="Our services"></a>
+      </div>
     </div>
-  </header>
-
-  <main id="top" class="container">
-    <section class="hero" aria-labelledby="hero-title">
-      <span class="chip">Trusted IT Consulting • Cloud • Data • Cybersecurity</span>
-      <h1 id="hero-title">Build secure, scalable systems that move your business forward.</h1>
-      <p>Prime Nexus partners with teams to design, modernize, and operate technology that actually serves the business. From cloud architecture and data platforms to security hardening and delivery coaching—our consultants ship results, not buzzwords.</p>
-      <div class="hero-cta">
-        <a class="btn primary" href="#contact">Book a consultation</a>
-        <a class="btn ghost" href="#services">Explore services</a>
-      </div>
-
-      <div class="hero-card">
-        <div class="panel">
-          <h3>What we do</h3>
-          <div class="grid cols-2" style="margin-top:10px">
-            <div class="card">
-              <div class="icon" aria-hidden="true">☁️</div>
-              <h3>Cloud & Platform</h3>
-              <p>Landing zones, Kubernetes, DevOps, cost optimization, and SRE to keep systems reliable and affordable.</p>
-            </div>
-            <div class="card">
-              <div class="icon" aria-hidden="true">🧠</div>
-              <h3>Data & Analytics</h3>
-              <p>Warehouses, ELT/ETL, real-time pipelines, governance, and dashboards that drive decisions.</p>
-            </div>
-            <div class="card">
-              <div class="icon" aria-hidden="true">🔐</div>
-              <h3>Cybersecurity</h3>
-              <p>Zero-trust architectures, IAM, threat modeling, compliance readiness, and security reviews.</p>
-            </div>
-            <div class="card">
-              <div class="icon" aria-hidden="true">🚀</div>
-              <h3>Delivery & Modernization</h3>
-              <p>Legacy re-platforming, API design, agile coaching, and product enablement for faster outcomes.</p>
-            </div>
-          </div>
+    <div class="hero-right reveal delay-1">
+      <div class="hero-card-stack">
+        <div class="hero-stat-card gold-border">
+          <div class="hero-stat-num">100%</div>
+          <div class="hero-stat-label" data-fr="Capital camerounais<br>Société enregistrée" data-en="Cameroonian capital<br>Registered company"></div>
         </div>
-
-        <div class="panel">
-          <h3>Compliance & Risk Impact</h3>
-          <div class="kpis">
-            <div>
-              <div style="font-size:30px; font-weight:800">1,250+</div>
-              <div class="sub">Cybersecurity threats detected / month</div>
-            </div>
-            <div>
-              <div style="font-size:30px; font-weight:800">$14M+</div>
-              <div class="sub">Potential penalty exposure without compliance</div>
-            </div>
-            <div>
-              <div style="font-size:30px; font-weight:800">$9M+</div>
-              <div class="sub">Estimated lost revenue from GDPR, HIPAA, PCI DSS, ISO 27001, SOX gaps</div>
-            </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-num">4+</div>
+          <div class="hero-stat-label" data-fr="Domaines d'expertise<br>technologique" data-en="Technology<br>expertise domains"></div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-num">ISO</div>
+          <div class="hero-stat-label" data-fr="Approche conforme<br>ISO 27001 & RGPD" data-en="ISO 27001 &<br>GDPR aligned approach"></div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-num">FR·EN</div>
+          <div class="hero-stat-label" data-fr="Conseil bilingue<br>français & anglais" data-en="Bilingual consulting<br>French & English"></div>
+        </div>
+        <div class="hero-location">
+          <div class="hero-location-dot" aria-hidden="true"></div>
+          <div class="hero-location-text">
+            <strong>Yaoundé · Santa Barbara</strong>
+            RCCM CM-NSI-02-2025-B13-00251
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="services" aria-labelledby="services-title">
-      <h2 id="services-title">Services</h2>
-      <p class="sub">Engagements sized to your goals—from short assessments to full delivery squads.</p>
-      <div class="grid cols-3">
-        <div class="card">
-          <div class="icon">🧭</div>
-          <h3>Architecture & Roadmaps</h3>
-          <p>Hands-on discovery and technical strategy tied to business outcomes, plus a pragmatic plan to execute.</p>
-        </div>
-        <div class="card">
-          <div class="icon">⚙️</div>
-          <h3>DevOps & Automation</h3>
-          <p>CI/CD, infrastructure as code, observability, incident response, and performance tuning.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🛡️</div>
-          <h3>Security & Compliance</h3>
-          <p>Security baselines, SOC 2 / ISO prep, cloud security posture management, and risk reduction.</p>
-        </div>
-        <div class="card">
-          <div class="icon">📦</div>
-          <h3>Applications & APIs</h3>
-          <p>Microservices, integrations, and migrations—with maintainability and developer happiness baked in.</p>
-        </div>
-        <div class="card">
-          <div class="icon">📊</div>
-          <h3>Analytics & BI</h3>
-          <p>Modern data stack selection, modeling, governance, and KPI dashboards aligned to teams.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🤝</div>
-          <h3>Staff Augmentation</h3>
-          <p>Experienced engineers, analysts, and security specialists to accelerate delivery.</p>
+  <!-- ── TICKER ───────────────────────────────────────────────────────────── -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-inner">
+      <div class="ticker-item">Cloud &amp; Infrastructure</div>
+      <div class="ticker-item">Cybersécurité</div>
+      <div class="ticker-item">Data &amp; Analytics</div>
+      <div class="ticker-item">Développement &amp; APIs</div>
+      <div class="ticker-item">Consulting IT</div>
+      <div class="ticker-item">Mobile Money Integration</div>
+      <div class="ticker-item">Conformité COBAC · BEAC · ARTP</div>
+      <div class="ticker-item">Import · Export · BTP</div>
+      <!-- duplicated for seamless loop -->
+      <div class="ticker-item">Cloud &amp; Infrastructure</div>
+      <div class="ticker-item">Cybersécurité</div>
+      <div class="ticker-item">Data &amp; Analytics</div>
+      <div class="ticker-item">Développement &amp; APIs</div>
+      <div class="ticker-item">Consulting IT</div>
+      <div class="ticker-item">Mobile Money Integration</div>
+      <div class="ticker-item">Conformité COBAC · BEAC · ARTP</div>
+      <div class="ticker-item">Import · Export · BTP</div>
+    </div>
+  </div>
+
+  <!-- ── SERVICES ─────────────────────────────────────────────────────────── -->
+  <section class="services" id="services">
+    <div class="section-header reveal">
+      <div>
+        <p class="eyebrow" data-fr="Ce que nous faisons" data-en="What we do"></p>
+        <h2 class="section-title">
+          <span data-fr>Des expertises <em>concrètes</em><br>au service de votre croissance.</span>
+          <span data-en>Concrete expertise<br>to <em>drive your growth.</em></span>
+        </h2>
+      </div>
+      <p class="section-sub">
+        <span data-fr>Nos missions vont de l'audit express à l'accompagnement complet — adaptés à la réalité des entreprises au Cameroun et en Afrique Centrale.</span>
+        <span data-en>Our engagements range from rapid assessments to full delivery — sized to the reality of businesses in Cameroon and Central Africa.</span>
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <span class="service-icon">☁️</span>
+        <div class="service-num">01</div>
+        <h3 class="service-title" data-fr="Cloud &amp; Infrastructure" data-en="Cloud &amp; Infrastructure"></h3>
+        <p class="service-desc">
+          <span data-fr>Migration vers le cloud, architecture de serveurs, DevOps et optimisation des coûts. Nous vous aidons à sortir des systèmes vieillissants vers des plateformes fiables et économiques.</span>
+          <span data-en>Cloud migration, server architecture, DevOps, and cost optimization. Move off aging on-premise systems onto reliable, cost-effective platforms.</span>
+        </p>
+        <div class="service-tags">
+          <span class="tag">AWS · Azure · GCP</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">DevOps</span>
         </div>
       </div>
-    </section>
-
-    <section id="industries" aria-labelledby="industries-title">
-      <h2 id="industries-title">Industries</h2>
-      <p class="sub">We meet you where you are—startup, scale-up, or enterprise.</p>
-      <div class="grid cols-3">
-        <div class="card"><h3>Fintech & Payments</h3><p>Low-latency systems, PCI alignment, fraud prevention, and auditability.</p></div>
-        <div class="card"><h3>Healthcare</h3><p>HIPAA-aware architectures, interoperability, and data privacy by design.</p></div>
-        <div class="card"><h3>Retail & eCommerce</h3><p>Peak-season reliability, personalization, and analytics to boost LTV.</p></div>
-      </div>
-    </section>
-
-    <section id="approach" aria-labelledby="approach-title">
-      <h2 id="approach-title">Our approach</h2>
-      <p class="sub">Simple, transparent, outcome-driven.</p>
-      <div class="steps">
-        <div class="step"><div class="badge">1</div><div><strong>Discovery & Alignment.</strong> We connect the tech to the metrics that matter and map constraints early.</div></div>
-        <div class="step"><div class="badge">2</div><div><strong>Design & Plan.</strong> Architecture, security baselines, and a delivery plan that minimizes risk.</div></div>
-        <div class="step"><div class="badge">3</div><div><strong>Build & Enable.</strong> Pair with your team, automate relentlessly, and deliver in small, testable slices.</div></div>
-        <div class="step"><div class="badge">4</div><div><strong>Run & Improve.</strong> Observability, SLOs, and cost visibility to keep systems healthy and budgets sane.</div></div>
-      </div>
-    </section>
-
-    <section id="about" aria-labelledby="about-title">
-      <h2 id="about-title">About Prime Nexus</h2>
-      <p class="sub">A senior team of architects, data engineers, and security specialists who enjoy solving messy problems.</p>
-      <div class="grid cols-2">
-        <div class="card">
-          <h3>Why us</h3>
-          <p>No black boxes. We work in the open, enable your team, and leave you stronger than we found you.</p>
-        </div>
-        <div class="card">
-          <h3>How we engage</h3>
-          <p>Fixed-scope assessments, outcome-based projects, or embedded specialists—whichever drives results quickest.</p>
+      <div class="service-card reveal delay-1">
+        <span class="service-icon">🔐</span>
+        <div class="service-num">02</div>
+        <h3 class="service-title" data-fr="Cybersécurité &amp; Conformité" data-en="Cybersecurity &amp; Compliance"></h3>
+        <p class="service-desc">
+          <span data-fr>Audit de sécurité, politiques IAM, modélisation des menaces et préparation aux référentiels ISO 27001, COBAC et BEAC. Protégez vos données et celles de vos clients.</span>
+          <span data-en>Security audits, IAM policies, threat modeling, and ISO 27001, COBAC, BEAC readiness. Protect your data and your clients'.</span>
+        </p>
+        <div class="service-tags">
+          <span class="tag">ISO 27001</span>
+          <span class="tag">COBAC</span>
+          <span class="tag">Zero-Trust</span>
         </div>
       </div>
-    </section>
+      <div class="service-card reveal delay-2">
+        <span class="service-icon">📊</span>
+        <div class="service-num">03</div>
+        <h3 class="service-title" data-fr="Data &amp; Business Intelligence" data-en="Data &amp; Business Intelligence"></h3>
+        <p class="service-desc">
+          <span data-fr>Entrepôts de données, pipelines ELT/ETL, tableaux de bord KPI et gouvernance des données. Transformez vos données brutes en décisions stratégiques.</span>
+          <span data-en>Data warehouses, ELT/ETL pipelines, KPI dashboards, and data governance. Turn raw data into strategic decisions.</span>
+        </p>
+        <div class="service-tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">dbt</span>
+          <span class="tag">SQL · Python</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-icon">🚀</span>
+        <div class="service-num">04</div>
+        <h3 class="service-title" data-fr="Développement &amp; Intégration" data-en="Development &amp; Integration"></h3>
+        <p class="service-desc">
+          <span data-fr>Applications métier, APIs, intégrations Mobile Money (MTN MoMo, Orange Money) et modernisation de systèmes existants. Du code qui dure.</span>
+          <span data-en>Business applications, APIs, Mobile Money integrations (MTN MoMo, Orange Money), and legacy modernization. Code built to last.</span>
+        </p>
+        <div class="service-tags">
+          <span class="tag">MTN MoMo</span>
+          <span class="tag">REST · GraphQL</span>
+          <span class="tag">Microservices</span>
+        </div>
+      </div>
+      <div class="service-card reveal delay-1">
+        <span class="service-icon">🧭</span>
+        <div class="service-num">05</div>
+        <h3 class="service-title" data-fr="Architecture &amp; Stratégie IT" data-en="Architecture &amp; IT Strategy"></h3>
+        <p class="service-desc">
+          <span data-fr>Diagnostic technique, feuille de route, choix technologiques et alignement IT/métier. Nous construisons la vision avant de construire les systèmes.</span>
+          <span data-en>Technical diagnosis, roadmapping, technology choices, and IT/business alignment. We build the vision before we build the systems.</span>
+        </p>
+        <div class="service-tags">
+          <span class="tag">Roadmap</span>
+          <span class="tag">Due Diligence</span>
+          <span class="tag">Audit</span>
+        </div>
+      </div>
+      <div class="service-card reveal delay-2">
+        <span class="service-icon">🤝</span>
+        <div class="service-num">06</div>
+        <h3 class="service-title" data-fr="Ressources &amp; Formation" data-en="Staffing &amp; Training"></h3>
+        <p class="service-desc">
+          <span data-fr>Ingénieurs et consultants seniors en renfort, formation des équipes internes et transfert de compétences. Nous renforçons vos équipes sans les remplacer.</span>
+          <span data-en>Senior engineers and consultants on demand, internal team training, and skills transfer. We strengthen your teams without replacing them.</span>
+        </p>
+        <div class="service-tags">
+          <span class="tag">Staff Aug</span>
+          <span class="tag">Formation</span>
+          <span class="tag">Coaching</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Let’s talk</h2>
-      <p class="sub">Tell us a bit about your goals and challenges. We’ll respond within one business day.</p>
-      <form action="#" method="POST" onsubmit="return handleSubmit(event)">
-        <div class="grid cols-2">
+  <!-- ── SECTEURS ─────────────────────────────────────────────────────────── -->
+  <section class="secteurs" id="secteurs">
+    <div class="section-header reveal">
+      <div>
+        <p class="eyebrow" data-fr="Nos marchés" data-en="Our markets"></p>
+        <h2 class="section-title">
+          <span data-fr>Nous connaissons <em>votre secteur.</em></span>
+          <span data-en>We know <em>your industry.</em></span>
+        </h2>
+      </div>
+      <p class="section-sub">
+        <span data-fr>De la startup au groupe institutionnel, nous nous adaptons aux contraintes réglementaires, opérationnelles et culturelles propres à chaque secteur en Afrique Centrale.</span>
+        <span data-en>From startup to institutional group, we adapt to the regulatory, operational, and cultural constraints specific to each industry in Central Africa.</span>
+      </p>
+    </div>
+    <div class="secteurs-grid">
+      <div class="secteur-card reveal">
+        <span class="secteur-icon">🏦</span>
+        <h3 class="secteur-title" data-fr="Banques &amp; Microfinance" data-en="Banking &amp; Microfinance"></h3>
+        <p class="secteur-desc">
+          <span data-fr>Conformité COBAC, sécurisation des transactions, intégration Mobile Money et modernisation des SI bancaires.</span>
+          <span data-en>COBAC compliance, transaction security, Mobile Money integration, and core banking modernization.</span>
+        </p>
+        <div class="secteur-ref">COBAC · BEAC · CEMAC</div>
+      </div>
+      <div class="secteur-card reveal delay-1">
+        <span class="secteur-icon">📡</span>
+        <h3 class="secteur-title" data-fr="Télécoms &amp; Opérateurs" data-en="Telecoms &amp; Operators"></h3>
+        <p class="secteur-desc">
+          <span data-fr>Architecture réseau, gestion des données clients, conformité ARTP et optimisation des plateformes de services digitaux.</span>
+          <span data-en>Network architecture, customer data management, ARTP compliance, and digital services platform optimization.</span>
+        </p>
+        <div class="secteur-ref">ARTP · MTN · Orange</div>
+      </div>
+      <div class="secteur-card reveal delay-2">
+        <span class="secteur-icon">🏛️</span>
+        <h3 class="secteur-title" data-fr="Administration &amp; Para-public" data-en="Government &amp; Para-public"></h3>
+        <p class="secteur-desc">
+          <span data-fr>Numérisation des procédures, sécurisation des données publiques et transformation digitale des institutions.</span>
+          <span data-en>Procedure digitization, public data security, and digital transformation for institutions.</span>
+        </p>
+        <div class="secteur-ref">Ministères · Agences</div>
+      </div>
+      <div class="secteur-card reveal">
+        <span class="secteur-icon">🏢</span>
+        <h3 class="secteur-title" data-fr="PME &amp; Startups" data-en="SMEs &amp; Startups"></h3>
+        <p class="secteur-desc">
+          <span data-fr>Solutions technologiques accessibles, automatisation des processus métier et accompagnement à la croissance numérique.</span>
+          <span data-en>Accessible technology solutions, business process automation, and digital growth support.</span>
+        </p>
+        <div class="secteur-ref">Yaoundé · Douala · CEMAC</div>
+      </div>
+      <div class="secteur-card reveal delay-1">
+        <span class="secteur-icon">🌍</span>
+        <h3 class="secteur-title" data-fr="ONGs &amp; Organisations Internationales" data-en="NGOs &amp; International Orgs"></h3>
+        <p class="secteur-desc">
+          <span data-fr>Infrastructure sécurisée, gestion des données bénéficiaires, reporting et conformité RGPD.</span>
+          <span data-en>Secure infrastructure, beneficiary data management, reporting, and GDPR compliance.</span>
+        </p>
+        <div class="secteur-ref">RGPD · UN · Bailleurs</div>
+      </div>
+      <div class="secteur-card reveal delay-2">
+        <span class="secteur-icon">🛒</span>
+        <h3 class="secteur-title" data-fr="Commerce &amp; Distribution" data-en="Commerce &amp; Distribution"></h3>
+        <p class="secteur-desc">
+          <span data-fr>E-commerce, gestion des stocks, logistique et paiements digitaux adaptés au marché camerounais.</span>
+          <span data-en>E-commerce, inventory management, logistics, and digital payments for the Cameroonian market.</span>
+        </p>
+        <div class="secteur-ref">Import · Export · CEMAC</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── APPROCHE ─────────────────────────────────────────────────────────── -->
+  <section class="approche" id="approche">
+    <div class="approche-inner">
+      <div class="approche-left reveal">
+        <p class="eyebrow" data-fr="Notre méthode" data-en="Our method"></p>
+        <h2 class="section-title">
+          <span data-fr>Simple, transparent,<br><em>orienté résultats.</em></span>
+          <span data-en>Simple, transparent,<br><em>outcome-driven.</em></span>
+        </h2>
+        <p class="section-sub">
+          <span data-fr>Pas de boîte noire. Chaque étape est documentée, chaque décision expliquée. Nous travaillons avec vos équipes, pas à leur place.</span>
+          <span data-en>No black boxes. Every step is documented, every decision explained. We work with your teams, not in place of them.</span>
+        </p>
+      </div>
+      <div class="approche-steps reveal delay-1">
+        <div class="step">
+          <div class="step-num">01</div>
           <div>
-            <label for="name">Name</label>
-            <input id="name" name="name" placeholder="Your name" required />
+            <h3 class="step-title" data-fr="Découverte &amp; Cadrage" data-en="Discovery &amp; Alignment"></h3>
+            <p class="step-desc">
+              <span data-fr>Nous cartographions votre système d'information, identifions les enjeux métier et définissons les priorités techniques liées à vos objectifs.</span>
+              <span data-en>We map your information system, identify business priorities, and define technical objectives tied to your goals.</span>
+            </p>
           </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
           <div>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@company.com" required />
+            <h3 class="step-title" data-fr="Architecture &amp; Plan" data-en="Design &amp; Plan"></h3>
+            <p class="step-desc">
+              <span data-fr>Proposition d'architecture, audit de sécurité, choix technologiques et feuille de route détaillée avec jalons et livrables mesurables.</span>
+              <span data-en>Architecture proposal, security baseline, technology choices, and a detailed roadmap with measurable milestones and deliverables.</span>
+            </p>
           </div>
         </div>
-        <div>
-          <label for="company">Company</label>
-          <input id="company" name="company" placeholder="Company Inc." />
+        <div class="step">
+          <div class="step-num">03</div>
+          <div>
+            <h3 class="step-title" data-fr="Construction &amp; Livraison" data-en="Build &amp; Deliver"></h3>
+            <p class="step-desc">
+              <span data-fr>Développement itératif, intégration avec vos outils existants, tests rigoureux et mise en production progressive.</span>
+              <span data-en>Iterative development, integration with existing tools, rigorous testing, and phased rollout.</span>
+            </p>
+          </div>
         </div>
-        <div>
-          <label for="message">What can we help with?</label>
-          <textarea id="message" name="message" rows="5" placeholder="Briefly describe your project or challenge" required></textarea>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div>
+            <h3 class="step-title" data-fr="Exploitation &amp; Amélioration" data-en="Run &amp; Improve"></h3>
+            <p class="step-desc">
+              <span data-fr>Monitoring, SLAs, formation de vos équipes et amélioration continue. Nous ne disparaissons pas après la livraison.</span>
+              <span data-en>Monitoring, SLAs, team training, and continuous improvement. We don't disappear after delivery.</span>
+            </p>
+          </div>
         </div>
-        <button class="btn primary" type="submit">Send message</button>
-        <span id="formMsg" class="sub" role="status" aria-live="polite"></span>
-      </form>
-    </section>
-  </main>
+      </div>
+    </div>
+  </section>
 
+  <!-- ── ABOUT ────────────────────────────────────────────────────────────── -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-visual reveal">
+        <div class="about-frame">
+          <div class="about-frame-badge" data-fr="Gérant &amp; Fondateur" data-en="Managing Director"></div>
+          <div class="about-frame-name">Deli Sarsar</div>
+          <div class="about-frame-title">Prime Nexus SARL · Yaoundé</div>
+        </div>
+      </div>
+      <div class="about-content reveal delay-1">
+        <p class="eyebrow" data-fr="À propos de Prime Nexus" data-en="About Prime Nexus"></p>
+        <h2 class="section-title">
+          <span data-fr>Une expertise internationale,<br><em>ancrée au Cameroun.</em></span>
+          <span data-en>International expertise,<br><em>rooted in Cameroon.</em></span>
+        </h2>
+        <p class="about-body">
+          <span data-fr>Prime Nexus est né d'une conviction simple : les entreprises camerounaises méritent le même niveau d'expertise technologique que les grandes firmes internationales — mais avec quelqu'un qui connaît le terrain, la réglementation locale et les réalités opérationnelles d'Afrique Centrale.<br><br>Fondée par Deli Sarsar, ingénieur logiciel avec plus de 10 ans d'expérience dans des environnements réglementés en Amérique du Nord, Prime Nexus combine rigueur internationale et compréhension profonde du marché local.</span>
+          <span data-en>Prime Nexus was born from a simple conviction: Cameroonian businesses deserve the same level of technology expertise as international firms — but with someone who knows the terrain, the local regulations, and the operational realities of Central Africa.<br><br>Founded by Deli Sarsar, a software engineer with 10+ years of experience in regulated environments across North America, Prime Nexus combines international rigor with deep local market understanding.</span>
+        </p>
+        <div class="about-ids">
+          <div class="about-id-row"><span class="id-label">RCCM</span><span class="id-val">CM-NSI-02-2025-B13-00251</span></div>
+          <div class="about-id-row"><span class="id-label">NIU</span><span class="id-val">M042517677076G</span></div>
+          <div class="about-id-row">
+            <span class="id-label" data-fr="Siège social" data-en="Head office"></span>
+            <span class="id-val">Bastos, Yaoundé – Cameroun</span>
+          </div>
+          <div class="about-id-row">
+            <span class="id-label" data-fr="Capital" data-en="Capital"></span>
+            <span class="id-val">1.000.000 FCFA</span>
+          </div>
+        </div>
+        <div class="about-vals">
+          <div class="about-val-card">
+            <div class="val-title" data-fr="Transparence totale" data-en="Full transparency"></div>
+            <p class="val-desc"><span data-fr>Pas de jargon. Pas de boîte noire. Chaque décision est expliquée.</span><span data-en>No jargon. No black boxes. Every decision is explained.</span></p>
+          </div>
+          <div class="about-val-card">
+            <div class="val-title" data-fr="Ancrage local" data-en="Local roots"></div>
+            <p class="val-desc"><span data-fr>Nous connaissons les contraintes réglementaires et opérationnelles du Cameroun.</span><span data-en>We understand the regulatory and operational constraints of Cameroon.</span></p>
+          </div>
+          <div class="about-val-card">
+            <div class="val-title" data-fr="Résultats mesurables" data-en="Measurable outcomes"></div>
+            <p class="val-desc"><span data-fr>Livrables concrets, KPIs suivis, équipes renforcées.</span><span data-en>Concrete deliverables, tracked KPIs, strengthened teams.</span></p>
+          </div>
+          <div class="about-val-card">
+            <div class="val-title" data-fr="Bilingue FR / EN" data-en="Bilingual FR / EN"></div>
+            <p class="val-desc"><span data-fr>Conseil en français et anglais pour toutes les parties prenantes.</span><span data-en>Consulting in French and English for all stakeholders.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ──────────────────────────────────────────────────────────── -->
+  <section class="contact" id="contact">
+    <div class="contact-left reveal">
+      <p class="eyebrow" data-fr="Parlons-en" data-en="Let's talk"></p>
+      <h2 class="section-title">
+        <span data-fr>Votre projet mérite<br><em>les meilleurs outils.</em></span>
+        <span data-en>Your project deserves<br><em>the right tools.</em></span>
+      </h2>
+      <p class="section-sub">
+        <span data-fr>Décrivez-nous votre situation. Nous répondons sous 24 heures ouvrables et proposons un premier échange sans engagement.</span>
+        <span data-en>Tell us about your situation. We respond within one business day and offer a first no-commitment conversation.</span>
+      </p>
+      <div class="contact-channels">
+        <a href="https://wa.me/237640739442" class="channel" target="_blank" rel="noopener">
+          <span class="channel-icon">💬</span>
+          <div><div class="channel-label">WhatsApp</div><div class="channel-val">+237 640 739 442</div></div>
+        </a>
+        <a href="mailto:info@primenexus.me" class="channel">
+          <span class="channel-icon">✉️</span>
+          <div><div class="channel-label">Email</div><div class="channel-val">info@primenexus.me</div></div>
+        </a>
+        <div class="channel">
+          <span class="channel-icon">📍</span>
+          <div>
+            <div class="channel-label" data-fr="Adresse" data-en="Address"></div>
+            <div class="channel-val">Santa Barbara, Yaoundé – Cameroun</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form class="contact-form reveal delay-1" id="contactForm" novalidate>
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label" data-fr="Nom complet" data-en="Full name"></label>
+          <input class="form-input" type="text" name="name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input class="form-input" type="email" name="email" required>
+        </div>
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label" data-fr="Société" data-en="Company"></label>
+          <input class="form-input" type="text" name="company">
+        </div>
+        <div class="form-group">
+          <label class="form-label">WhatsApp / Tél.</label>
+          <input class="form-input" type="tel" name="phone" placeholder="+237...">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" data-fr="Domaine d'intérêt" data-en="Area of interest"></label>
+        <select class="form-select" name="service">
+          <option value="cloud"    data-fr="Cloud &amp; Infrastructure"     data-en="Cloud &amp; Infrastructure"></option>
+          <option value="security" data-fr="Cybersécurité &amp; Conformité" data-en="Cybersecurity &amp; Compliance"></option>
+          <option value="data"     data-fr="Data &amp; Business Intelligence" data-en="Data &amp; Business Intelligence"></option>
+          <option value="dev"      data-fr="Développement &amp; Intégration" data-en="Development &amp; Integration"></option>
+          <option value="strategy" data-fr="Architecture &amp; Stratégie IT" data-en="Architecture &amp; IT Strategy"></option>
+          <option value="other"    data-fr="Autre"                           data-en="Other"></option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" data-fr="Décrivez votre projet ou besoin" data-en="Describe your project or need"></label>
+        <textarea class="form-textarea" name="message" required></textarea>
+      </div>
+      <button class="btn-submit" type="submit">
+        <span data-fr>Envoyer le message</span>
+        <span data-en>Send message</span>
+      </button>
+      <p class="form-success" id="formSuccess">
+        <span data-fr>✓ Message envoyé. Nous vous répondrons dans les 24h.</span>
+        <span data-en>✓ Message sent. We'll respond within 24 hours.</span>
+      </p>
+    </form>
+  </section>
+
+  <!-- ── FOOTER ───────────────────────────────────────────────────────────── -->
   <footer>
-    <div class="container foot">
-      <div>
-        <div class="logo" style="margin-bottom:8px">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span>Prime Nexus</span>
-        </div>
-        <div>IT Consulting • Cloud • Data • Cybersecurity</div>
-      </div>
-      <div>
-        <strong>Contact</strong>
-        <div><a href="mailto:info@primenexus.me">info@primenexus.me</a></div>
-        <div><a href="#contact">Book a consultation</a></div>
-      </div>
-      <div>
-        <strong>Legal</strong>
-        <div><a href="#">Privacy</a></div>
-        <div><a href="#">Terms</a></div>
-      </div>
+    <div class="footer-brand">
+      <a href="#top" class="nav-logo">
+        <div class="nav-logo-mark">PN</div>
+        <div class="nav-logo-text">Prime <span>Nexus</span></div>
+      </a>
+      <p class="footer-desc">
+        <span data-fr>Conseil en technologie et transformation digitale pour les entreprises et institutions d'Afrique Centrale.</span>
+        <span data-en>Technology consulting and digital transformation for businesses and institutions across Central Africa.</span>
+      </p>
+      <p class="footer-rccm">
+        RCCM : CM-NSI-02-2025-B13-00251 · NIU : M042517677076G<br>
+        Capital : 1.000.000 FCFA · SARL Unipersonnelle<br>
+        Santa Barbara, Yaoundé – République du Cameroun
+      </p>
     </div>
-    <div class="container" style="margin-top:18px">© <span id="yr"></span> Prime Nexus. All rights reserved.</div>
+    <div class="footer-col">
+      <div class="footer-col-title" data-fr="Services" data-en="Services"></div>
+      <ul class="footer-links">
+        <li><a href="#services" data-fr="Cloud &amp; Infrastructure" data-en="Cloud &amp; Infrastructure"></a></li>
+        <li><a href="#services" data-fr="Cybersécurité" data-en="Cybersecurity"></a></li>
+        <li><a href="#services" data-fr="Data &amp; Analytics" data-en="Data &amp; Analytics"></a></li>
+        <li><a href="#services" data-fr="Développement" data-en="Development"></a></li>
+        <li><a href="#services" data-fr="Stratégie IT" data-en="IT Strategy"></a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title" data-fr="Contact" data-en="Contact"></div>
+      <ul class="footer-links">
+        <li><a href="mailto:info@primenexus.me">info@primenexus.me</a></li>
+        <li><a href="https://wa.me/237640739442">+237 640 739 442</a></li>
+        <li><a href="https://primenexus.me">www.primenexus.me</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025–2026 Prime Nexus SARL · All rights reserved</span>
+      <span class="footer-copy" data-fr="Yaoundé, République du Cameroun" data-en="Yaoundé, Republic of Cameroon"></span>
+    </div>
   </footer>
 
-  <script>
-    function toggleMenu(){
-      const m = document.getElementById('mMenu');
-      m.style.display = m.style.display === 'block' ? 'none' : 'block';
-    }
-    document.getElementById('yr').textContent = new Date().getFullYear();
-
-    (function(){
-      const links = document.querySelectorAll('a[href^="#"]');
-      links.forEach(a => a.addEventListener('click', e => {
-        const id = a.getAttribute('href');
-        if(id.length > 1){
-          const el = document.querySelector(id);
-          if(el){
-            e.preventDefault();
-            const y = el.getBoundingClientRect().top + window.pageYOffset - 70;
-            window.scrollTo({top:y, behavior:'smooth'});
-          }
-        }
-      }));
-    })();
-
-    function handleSubmit(e){
-      e.preventDefault();
-      const msg = document.getElementById('formMsg');
-      msg.textContent = 'Thanks! Your message has been captured';
-      e.target.reset();
-      return false;
-    }
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
