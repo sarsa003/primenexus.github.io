@@ -155,8 +155,42 @@ const SmoothScroll = (() => {
   return { init };
 })();
 
+/* ── 7. THEME TOGGLE ────────────────────────────────────── */
+const Theme = (() => {
+  const STORAGE_KEY = 'pn_theme';
+  const ROOT = document.documentElement;
+
+  function applyTheme(theme) {
+    ROOT.setAttribute('data-theme', theme);
+    const btn = document.getElementById('themeBtn');
+    if (!btn) return;
+    btn.setAttribute('aria-label', theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+  }
+
+  function toggle() {
+    const current = ROOT.getAttribute('data-theme') || 'dark';
+    const next = current === 'dark' ? 'light' : 'dark';
+    applyTheme(next);
+    try { localStorage.setItem(STORAGE_KEY, next); } catch (_) {}
+  }
+
+  function init() {
+    let saved;
+    try { saved = localStorage.getItem(STORAGE_KEY); } catch (_) {}
+    if (!saved) {
+      saved = 'light';
+    }
+    applyTheme(saved);
+    const btn = document.getElementById('themeBtn');
+    if (btn) btn.addEventListener('click', toggle);
+  }
+
+  return { init };
+})();
+
 /* ── BOOT ─────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
+  Theme.init();
   Lang.init();
   MobileMenu.init();
   Navbar.init();
